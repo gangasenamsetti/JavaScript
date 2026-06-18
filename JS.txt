@@ -72,7 +72,10 @@ Types of functions:
 2. function expressions - A function can be assigned to a variable.
 3.Arrow functions  - shorter form of function exp and we can skip return and function and curly braces
 4.Anonymous Function - Anyonymous function is a function without function name
-	c
+	ex:
+	function(a, b) {
+    return a + b;
+}
 	
 
 Example of normal function:
@@ -103,6 +106,62 @@ const add = (a, b) => {
 
 console.log(add(10, 20));
 
+                                             OBJECTS
+*Objects are variables that can store both values and functions.
+*Values are stored as key:value pairs called properties.
+*Functions are stored as key:function() pairs called methods.
+* There are 2 ways of creating objects:
+
+method1:
+const car = {
+  type: "Fiat",
+  model: "500",
+  color: "white"
+};
+
+method2: #using constructor
+const person = new Object({
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+});
+
+EXample of using methods in objects:
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  age      : 50,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+console.log(person.fullName());
+console.log(person.firstName);
+console.log(person["firstName"]);
+
+Example:
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let student={
+                firstName:"ganga",
+                lastName:"senamsetti",
+                age:25
+            };
+            // document.getElementById("demo").innerText=ans;
+            console.log(student.firstName);
+            console.log(student);
+            console.log(student["age"]);
+            for(let i in student){
+                console.log(student[i]); //to get the value
+                console.log(student); //to get the key
+            }
+        </script>
+    </body>
+</html>
 
 
 
