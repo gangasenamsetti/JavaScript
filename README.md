@@ -1,2 +1,110 @@
 # JavaScript
-jhdb
+# JavaScript
+
+*JavaScript is the programming language of the web.It can update and change the HTML and CSS
+*In HTML, JavaScript code is inserted between <script> and </script> tags in <head> tag but whereas in JS we insert <sript> in <body> tag.
+*single-line comments start with // and end with //
+*Multi-line comments start with /* and end with */
+*console.log() //is used to print
+*typeof() is used toknow the type of datatype
+
+TYPES OF VARIABLES
+1.var - Older way of declaring variables.
+2.let
+3.constant - Always use const if the value should not be changed
+
+var
+*Older way of declaring variables.
+* Can be redeclared and updated.
+* Function-scoped.
+  Example:
+  var name = "Ganga";
+  var name = "John"; // Allowed redeclaration
+  name="keerthi" //Allows updating of value
+  console.log(name); //
+
+console.log(name); // John
+
+let
+* new way of declaring variables
+* Canot be redeclared and updated.
+* block-scope (can access anywhere)
+
+const
+*Cannot be updated or redeclared.
+* It represents the constant value
+
+
+* let x = "5" + 2 + 3; // output:523 (treats as a string)
+   If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+*let x = 10;
+ let y = 20;
+ let z = "30";
+ let result = x + y + z; #3030
+* let a; // it is of type undefined
+* let a=""; //it is also type undefined
+* charAt() and at() are used to access character in a string but at() accepts non negative indexes also but charAt() accepts only positive values
+* slice(start,end) accepts both positive and negative indexes whereas substring() accepts only postive values
+* substr(start,length)
+  example:
+  let str = "Apple, Banana, Kiwi";
+  let part = str.substr(7, 6); #banana
+*The Number() method can be used to convert JavaScript variables to numbers
+*The toString() method returns a number as a string
+
+
+DATATYPES
+JavaScript has 8 Datatypes
+A JavaScript variable can hold 8 types of data:
+Type	Description
+1.String	A text of characters enclosed in quotes
+2.Number	A number representing a mathematical value
+3.Bigint	A number representing a large integer
+4.Boolean	A data type representing true or false
+5.Object	A collection of key-value pairs of data
+6.Undefined	A primitive variable with no assigned value
+7.Null	A primitive value representing object absence
+8.Symbol	A unique and primitive identifier
+
+
+Types of functions:
+1.normal functions
+2. function expressions - A function can be assigned to a variable.
+3.Arrow functions  - shorter form of function exp and we can skip return and function and curly braces
+4.Anonymous Function - Anyonymous function is a function without function name
+	c
+	
+
+Example of normal function:
+sayHi();
+
+function sayHi() {
+    console.log("Hi");
+}
+sayHi()
+
+
+Example of function expression:
+const greet = function(name) {
+    return "Hello " + name;
+};
+
+console.log(greet("Ganga"));
+
+Example of Arrow function:
+syntax:
+const functionName = (parameters) => {
+    // code
+};
+
+const add = (a, b) => {
+    return a + b;
+};
+
+console.log(add(10, 20));
+
+
+
+
+
+
